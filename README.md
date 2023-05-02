@@ -1,1 +1,0 @@
-# dictionary-project-react
