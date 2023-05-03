@@ -1,5 +1,5 @@
 import styles from "./styles.module.css"
-import moonEmpty from "../../assets/moon-empty-icon.png"
+import moonEmpty from "../../assets/moon-empty.png"
 
 export default function ThemeToggleBtn () {
     return (
