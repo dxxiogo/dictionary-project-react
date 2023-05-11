@@ -1,0 +1,9 @@
+.synonym{
+    display: flex;
+    gap: 10px;
+}
+
+.synonym h3 {
+    font-size: 1rem;
+    margin-left: 1.7rem;
+}

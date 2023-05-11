@@ -1,21 +1,10 @@
-.icon {
-    height: 2.2rem; /*40px*/
-
-}
-
 .header {
     display: flex;
     max-width: 100%;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
-}
-
-.additional-function-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.7rem;
+    margin-bottom: 1rem;
 }
 
 header div > h1 {

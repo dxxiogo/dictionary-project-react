@@ -8,9 +8,7 @@ export default function Header () {
             <div>
                <h1>{"Dictionary.jsx"}</h1>
             </div>
-            <div className={styles["additional-function-container"]}>
-                <ThemeToggleBtn/>
-            </div>
+            <ThemeToggleBtn/>
         </header>
     )
 }
