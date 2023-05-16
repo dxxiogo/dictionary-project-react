@@ -5,6 +5,7 @@ import styles from "./styles.module.css"
 
 export default function Meaning ({wordConcepts}) {
     console.log(wordConcepts);
+    if(wordConcepts) {
       return (
         <>
           <div className={styles["word-info"]}>
@@ -15,9 +16,11 @@ export default function Meaning ({wordConcepts}) {
               <PlayAudio/>
           </div>
           <div>
-              <Topic/>
+              <Topic title={wordConcepts[0]?.meanings[0]?.partOfSpeech} definitions={wordConcepts[0]?.meanings[0]?.definitions}/>
               <Synonym/>
           </div>
         </>   
       )
+
+    } 
 }
