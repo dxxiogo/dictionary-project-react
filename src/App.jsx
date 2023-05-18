@@ -5,7 +5,6 @@ import Meaning from "./components/Meaning/Meaning"
 
 function App() {
   const [meaning, setMeaning] = useState([]);
-
   function searchWord (word) {
       setMeaning(word);
   } 
