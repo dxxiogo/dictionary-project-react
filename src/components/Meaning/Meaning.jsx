@@ -1,11 +1,21 @@
 import PlayAudio from "../PlayAudio/PlayAudio";
 import Topic from "./Topic/Topic";
-import Synonym from "./Synonym/Synonym";
 import styles from "./styles.module.css"
 
 export default function Meaning ({wordConcepts}) {
-    console.log(wordConcepts);
-    if(wordConcepts) {
+    console.log(wordConcepts)
+    let playAudio = null
+    if(wordConcepts[0]?.phonetics[0].audio) {
+      playAudio =  <PlayAudio urlAudio= {wordConcepts[0]?.phonetics[0].audio ?? []} />;
+    }
+    const topics = wordConcepts[0]?.meanings
+    let listOfTopics = []
+    if(topics) {
+      listOfTopics =  topics.map(({partOfSpeech, definitions, synonyms}) => {
+        return <Topic partOfSpeechTopic={partOfSpeech} definitionsTopic={definitions} synonymsTopic={synonyms ?? []}/>
+      })
+    }
+    if(!(wordConcepts.message)) {
       return (
         <>
           <div className={styles["word-info"]}>
@@ -13,14 +23,13 @@ export default function Meaning ({wordConcepts}) {
                   <h1>{wordConcepts[0]?.word}</h1>
                   <h2>{wordConcepts[0]?.phonetic}</h2>
               </div>
-              <PlayAudio/>
+              {playAudio}
           </div>
-          <div>
-              <Topic title={wordConcepts[0]?.meanings[0]?.partOfSpeech} definitions={wordConcepts[0]?.meanings[0]?.definitions}/>
-              <Synonym/>
-          </div>
+            {listOfTopics}
         </>   
       )
-
-    } 
+    } else {
+      return <p className={styles["no-definitions-found"]}>{wordConcepts.title}
+      </p>
+    }
 }

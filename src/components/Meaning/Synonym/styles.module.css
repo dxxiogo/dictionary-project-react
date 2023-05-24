@@ -1,9 +1,13 @@
 .synonym{
     display: flex;
     gap: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1rem;
+    flex-direction: column;
 }
 
 .synonym h3 {
     font-size: 1rem;
-    margin-left: 1.7rem;
 }

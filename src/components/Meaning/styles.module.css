@@ -16,3 +16,13 @@
     color: #a644ed;
     font-weight: 200;
 }
+
+.no-defitions-found{
+    text-align: center;
+    margin: 10px;
+}
+ 
+p {
+    text-align: center;
+    margin-top: 1rem;
+}
