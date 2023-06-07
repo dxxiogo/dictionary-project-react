@@ -1,6 +1,7 @@
 .header {
     display: flex;
-    width: 35rem;
+    max-width: 35rem;
+    width: 85%;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
@@ -11,3 +12,4 @@ header div > h1 {
     font-size: 1.4rem;
     color: #a644ed;
 }
+
