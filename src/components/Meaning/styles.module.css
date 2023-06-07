@@ -1,9 +1,10 @@
 .word-info {
     display: flex;
     align-items: center;
-
-    justify-content: space-between;
+    gap: 20rem;
     padding: 20px;
+    width: 32rem;
+    
 }
 
 .word-info div > h1 {

@@ -3,11 +3,8 @@ import playIcon from "../../assets/play-icon.png"
 import { useState} from "react"
 
 export default function PlayAudio ({urlAudio}) {
-    console.log(urlAudio)
-
     const [isPlaying, setIsPlaying] = useState(false);
     function playAudio (ev) {
-        ev.target;
         setIsPlaying(true);
     }
     return (
