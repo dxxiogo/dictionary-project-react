@@ -7,13 +7,6 @@ export default function Meaning ({wordConcepts}) {
     if(wordConcepts[0]?.phonetics[0].audio) {
       playAudio =  <PlayAudio urlAudio= {wordConcepts[0]?.phonetics[0].audio ?? []} />;
     }
-    const topics = wordConcepts[0]?.meanings
-    let listOfTopics = []
-    if(topics) {
-      listOfTopics =  topics.map(({partOfSpeech, definitions, synonyms}) => {
-        return <Topic partOfSpeechTopic={partOfSpeech} definitionsTopic={definitions} synonymsTopic={synonyms ?? []}/>
-      })
-    }
     if(!(wordConcepts.message)) {
       return (
         <>
@@ -22,9 +15,11 @@ export default function Meaning ({wordConcepts}) {
                   <h1>{wordConcepts[0]?.word}</h1>
                   <h2>{wordConcepts[0]?.phonetic}</h2>
               </div>
-              {playAudio}
+             {playAudio}
           </div>
-            {listOfTopics}
+            { wordConcepts[0]?.meanings ? wordConcepts[0]?.meanings.map(({partOfSpeech, definitions, synonyms}) => {
+        return <Topic partOfSpeechTopic={partOfSpeech} definitionsTopic={definitions} synonymsTopic={synonyms ?? []} key ={`list-${Math.random() *1000}`}/>
+      }) : null }
         </>   
       )
     } else {
