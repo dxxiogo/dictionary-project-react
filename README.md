@@ -6,7 +6,10 @@
 
   [Demo](https://dictionary-project-react.vercel.app) | [API Documentation](https://dictionaryapi.dev/)
 
-  ![Preview](project_preview.png)
+  <div align="center">
+  <img src="/src/assets/play-icon.png" alt="Desktop Screenshot" width="400"/>
+  <img src="/src/assets/tela-mobile.png" alt="Mobile Screenshot" width="200"/>
+</div>
 </div>
 
 ## Features
