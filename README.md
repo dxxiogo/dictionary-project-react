@@ -6,9 +6,9 @@
 
   [Demo](https://dictionary-project-react.vercel.app) | [API Documentation](https://dictionaryapi.dev/)
 
-  <div align="center">
-  <img src="/src/assets/play-icon.png" alt="Desktop Screenshot" width="400"/>
-  <img src="/src/assets/tela-mobile.png" alt="Mobile Screenshot" width="200"/>
+  <div align="center" gap="5">
+  <img src="/src/assets/tela-desktop.png" alt="Desktop Screenshot" width="660" heigth="300"/>
+  <img src="/src/assets/tela-mobile.png" alt="Mobile Screenshot" width="200" />
 </div>
 </div>
 
@@ -41,10 +41,6 @@ The project is deployed and accessible at [https://dictionary-project-react.verc
 ## Contribution
 
 Contributions are welcome! Feel free to fork this repository, create a branch for your changes, and then open a pull request.
-
-## License
-
-This project is licensed under [Your License Here].
 
 ---
 
